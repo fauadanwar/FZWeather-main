@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180C9A5D2B89FD8A00917402 /* FZRequestComponentsFromCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */; };
+		180C9A5F2B89FDB200917402 /* FZRequestComponentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */; };
+		180C9A632B8A277500917402 /* TemperatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A622B8A277500917402 /* TemperatureEnum.swift */; };
+		18335C062B90810400EA43CF /* openweathermap.org.cer in Resources */ = {isa = PBXBuildFile; fileRef = 18335C052B90810400EA43CF /* openweathermap.org.cer */; };
+		18335C092B90C42100EA43CF /* KeychainUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18335C082B90C42100EA43CF /* KeychainUtility.swift */; };
+		B4250A0F28FDBE4700526A67 /* FZCityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A0E28FDBE4700526A67 /* FZCityPresenter.swift */; };
+		B4250A1328FDCD0000526A67 /* FZLazyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1228FDCD0000526A67 /* FZLazyImageView.swift */; };
+		B4250A1528FDCE7500526A67 /* FZLazyImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1428FDCE7500526A67 /* FZLazyImagePresenter.swift */; };
+		B4250A1728FDD94C00526A67 /* FZImageCachingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */; };
+		B4250A1928FDDBFA00526A67 /* FZLazyImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1828FDDBFA00526A67 /* FZLazyImageInteractor.swift */; };
+		B4250A1B28FDF24100526A67 /* FZMapAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */; };
+		B4250A1F28FE9D1600526A67 /* FZCDCityWeatherExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1E28FE9D1600526A67 /* FZCDCityWeatherExtention.swift */; };
+		B4250A2128FE9DEA00526A67 /* FZCDCityExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2028FE9DEA00526A67 /* FZCDCityExtention.swift */; };
+		B4250A2328FE9E7100526A67 /* FZCDCoordExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2228FE9E7100526A67 /* FZCDCoordExtention.swift */; };
+		B4250A2528FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2428FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift */; };
+		B4250A2728FEA2E800526A67 /* FZCDListExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2628FEA2E800526A67 /* FZCDListExtention.swift */; };
+		B4250A2928FEA37100526A67 /* FZCDRainExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2828FEA37100526A67 /* FZCDRainExtention.swift */; };
+		B4250A2B28FEA3BB00526A67 /* FZCDMainExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2A28FEA3BB00526A67 /* FZCDMainExtention.swift */; };
+		B45219C328FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219C228FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift */; };
+		B45219C528FEA7FA0090C2F7 /* FZCDCloudsExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219C428FEA7FA0090C2F7 /* FZCDCloudsExtention.swift */; };
+		B45219C728FEA8890090C2F7 /* FZCDWindExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219C628FEA8890090C2F7 /* FZCDWindExtention.swift */; };
+		B45219C928FEA8E70090C2F7 /* FZCDSnowExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219C828FEA8E70090C2F7 /* FZCDSnowExtention.swift */; };
+		B45219CB28FEA9A50090C2F7 /* FZCDSysExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CA28FEA9A50090C2F7 /* FZCDSysExtention.swift */; };
+		B45219CD28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CC28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift */; };
+		B45219CF28FEB9AF0090C2F7 /* FZDeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */; };
+		B478F12428F6E6A300661BD5 /* FZWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F12328F6E6A300661BD5 /* FZWeatherApp.swift */; };
+		B478F12828F6E6A400661BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B478F12728F6E6A400661BD5 /* Assets.xcassets */; };
+		B478F12B28F6E6A400661BD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B478F12A28F6E6A400661BD5 /* Preview Assets.xcassets */; };
+		B478F12D28F6E6A400661BD5 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F12C28F6E6A400661BD5 /* PersistenceController.swift */; };
+		B478F13028F6E6A400661BD5 /* FZWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B478F12E28F6E6A400661BD5 /* FZWeather.xcdatamodeld */; };
+		B478F13A28F6E6A400661BD5 /* FZWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F13928F6E6A400661BD5 /* FZWeatherTests.swift */; };
+		B478F14428F6E6A400661BD5 /* FZWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F14328F6E6A400661BD5 /* FZWeatherUITests.swift */; };
+		B478F14628F6E6A400661BD5 /* FZWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F14528F6E6A400661BD5 /* FZWeatherUITestsLaunchTests.swift */; };
+		B478F15728F6E6B600661BD5 /* FZCityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F15628F6E6B600661BD5 /* FZCityWeatherView.swift */; };
+		B478F16228F7E4C800661BD5 /* FZCityWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F16128F7E4C800661BD5 /* FZCityWeatherPresenter.swift */; };
+		B478F16428F7EE3B00661BD5 /* FZCityWeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F16328F7EE3B00661BD5 /* FZCityWeatherRouter.swift */; };
+		B478F16628F7EE6900661BD5 /* FZCityWeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F16528F7EE6900661BD5 /* FZCityWeatherInteractor.swift */; };
+		B478F1D328FC334300661BD5 /* FZWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1D228FC334300661BD5 /* FZWeather.swift */; };
+		B478F1D528FC335F00661BD5 /* FZCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1D428FC335F00661BD5 /* FZCity.swift */; };
+		B478F1D728FC337F00661BD5 /* FZCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1D628FC337F00661BD5 /* FZCoord.swift */; };
+		B478F1D928FC339800661BD5 /* FZList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1D828FC339800661BD5 /* FZList.swift */; };
+		B478F1DB28FC3A8A00661BD5 /* FZClouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1DA28FC3A8A00661BD5 /* FZClouds.swift */; };
+		B478F1DD28FC3A9E00661BD5 /* FZMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1DC28FC3A9E00661BD5 /* FZMain.swift */; };
+		B478F1DF28FC3AC200661BD5 /* FZRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1DE28FC3AC200661BD5 /* FZRain.swift */; };
+		B478F1E128FC3AD600661BD5 /* FZSys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1E028FC3AD600661BD5 /* FZSys.swift */; };
+		B478F1E328FC3B0600661BD5 /* FZWeatherElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */; };
+		B478F1E528FC3B2700661BD5 /* FZWind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1E428FC3B2700661BD5 /* FZWind.swift */; };
+		B478F1E728FC53E300661BD5 /* FZWebServiceUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1E628FC53E300661BD5 /* FZWebServiceUtility.swift */; };
+		B478F1E928FC582B00661BD5 /* FZGeocoderUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1E828FC582B00661BD5 /* FZGeocoderUtility.swift */; };
+		B478F1ED28FC6DB100661BD5 /* FZCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1EC28FC6DB100661BD5 /* FZCityView.swift */; };
+		B478F1EF28FC809300661BD5 /* FZDailyWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1EE28FC809300661BD5 /* FZDailyWeatherPresenter.swift */; };
+		B478F1F128FC80C600661BD5 /* FZ3HrWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F028FC80C600661BD5 /* FZ3HrWeatherPresenter.swift */; };
+		B478F1F328FC817200661BD5 /* FZDailyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F228FC817200661BD5 /* FZDailyWeatherView.swift */; };
+		B478F1F528FC827400661BD5 /* FZ3HrWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F428FC827400661BD5 /* FZ3HrWeatherView.swift */; };
+		B478F1F728FC8AC800661BD5 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F628FC8AC800661BD5 /* UIApplication+Extension.swift */; };
+		B478F1F928FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F828FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift */; };
+		B478F1FB28FD201B00661BD5 /* FZCityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */; };
+		B478F1FD28FD2A6600661BD5 /* FZSnow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FC28FD2A6600661BD5 /* FZSnow.swift */; };
+		B478F1FF28FD3B1F00661BD5 /* FZEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */; };
+		B478F20128FD403B00661BD5 /* FZ5DaysRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */; };
+		B478F20328FD50AF00661BD5 /* FZDaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B478F13628F6E6A400661BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B478F11828F6E6A300661BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B478F11F28F6E6A300661BD5;
+			remoteInfo = FZWeather;
+		};
+		B478F14028F6E6A400661BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B478F11828F6E6A300661BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B478F11F28F6E6A300661BD5;
+			remoteInfo = FZWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRequestComponentsFromCity.swift; sourceTree = "<group>"; };
+		180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRequestComponentsProtocol.swift; sourceTree = "<group>"; };
+		180C9A622B8A277500917402 /* TemperatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureEnum.swift; sourceTree = "<group>"; };
+		18335C052B90810400EA43CF /* openweathermap.org.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openweathermap.org.cer; sourceTree = "<group>"; };
+		18335C082B90C42100EA43CF /* KeychainUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainUtility.swift; sourceTree = "<group>"; };
+		B4250A0E28FDBE4700526A67 /* FZCityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityPresenter.swift; sourceTree = "<group>"; };
+		B4250A1228FDCD0000526A67 /* FZLazyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImageView.swift; sourceTree = "<group>"; };
+		B4250A1428FDCE7500526A67 /* FZLazyImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImagePresenter.swift; sourceTree = "<group>"; };
+		B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZImageCachingUtility.swift; sourceTree = "<group>"; };
+		B4250A1828FDDBFA00526A67 /* FZLazyImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImageInteractor.swift; sourceTree = "<group>"; };
+		B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZMapAnnotationLocation.swift; sourceTree = "<group>"; };
+		B4250A1E28FE9D1600526A67 /* FZCDCityWeatherExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCityWeatherExtention.swift; sourceTree = "<group>"; };
+		B4250A2028FE9DEA00526A67 /* FZCDCityExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCityExtention.swift; sourceTree = "<group>"; };
+		B4250A2228FE9E7100526A67 /* FZCDCoordExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCoordExtention.swift; sourceTree = "<group>"; };
+		B4250A2428FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDDaysWeatherExtention.swift; sourceTree = "<group>"; };
+		B4250A2628FEA2E800526A67 /* FZCDListExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDListExtention.swift; sourceTree = "<group>"; };
+		B4250A2828FEA37100526A67 /* FZCDRainExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDRainExtention.swift; sourceTree = "<group>"; };
+		B4250A2A28FEA3BB00526A67 /* FZCDMainExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDMainExtention.swift; sourceTree = "<group>"; };
+		B45219C228FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDWeatherElementExtention.swift; sourceTree = "<group>"; };
+		B45219C428FEA7FA0090C2F7 /* FZCDCloudsExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCloudsExtention.swift; sourceTree = "<group>"; };
+		B45219C628FEA8890090C2F7 /* FZCDWindExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDWindExtention.swift; sourceTree = "<group>"; };
+		B45219C828FEA8E70090C2F7 /* FZCDSnowExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDSnowExtention.swift; sourceTree = "<group>"; };
+		B45219CA28FEA9A50090C2F7 /* FZCDSysExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDSysExtention.swift; sourceTree = "<group>"; };
+		B45219CC28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherBaseDataHandler.swift; sourceTree = "<group>"; };
+		B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZDeviceLocationService.swift; sourceTree = "<group>"; };
+		B478F12028F6E6A300661BD5 /* FZWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B478F12328F6E6A300661BD5 /* FZWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherApp.swift; sourceTree = "<group>"; };
+		B478F12728F6E6A400661BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B478F12A28F6E6A400661BD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B478F12C28F6E6A400661BD5 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B478F12F28F6E6A400661BD5 /* FZWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FZWeather.xcdatamodel; sourceTree = "<group>"; };
+		B478F13528F6E6A400661BD5 /* FZWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B478F13928F6E6A400661BD5 /* FZWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherTests.swift; sourceTree = "<group>"; };
+		B478F13F28F6E6A400661BD5 /* FZWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B478F14328F6E6A400661BD5 /* FZWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherUITests.swift; sourceTree = "<group>"; };
+		B478F14528F6E6A400661BD5 /* FZWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B478F15628F6E6B600661BD5 /* FZCityWeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZCityWeatherView.swift; sourceTree = "<group>"; };
+		B478F16128F7E4C800661BD5 /* FZCityWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityWeatherPresenter.swift; sourceTree = "<group>"; };
+		B478F16328F7EE3B00661BD5 /* FZCityWeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityWeatherRouter.swift; sourceTree = "<group>"; };
+		B478F16528F7EE6900661BD5 /* FZCityWeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityWeatherInteractor.swift; sourceTree = "<group>"; };
+		B478F1D228FC334300661BD5 /* FZWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeather.swift; sourceTree = "<group>"; };
+		B478F1D428FC335F00661BD5 /* FZCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCity.swift; sourceTree = "<group>"; };
+		B478F1D628FC337F00661BD5 /* FZCoord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCoord.swift; sourceTree = "<group>"; };
+		B478F1D828FC339800661BD5 /* FZList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZList.swift; sourceTree = "<group>"; };
+		B478F1DA28FC3A8A00661BD5 /* FZClouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZClouds.swift; sourceTree = "<group>"; };
+		B478F1DC28FC3A9E00661BD5 /* FZMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZMain.swift; sourceTree = "<group>"; };
+		B478F1DE28FC3AC200661BD5 /* FZRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRain.swift; sourceTree = "<group>"; };
+		B478F1E028FC3AD600661BD5 /* FZSys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZSys.swift; sourceTree = "<group>"; };
+		B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherElement.swift; sourceTree = "<group>"; };
+		B478F1E428FC3B2700661BD5 /* FZWind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWind.swift; sourceTree = "<group>"; };
+		B478F1E628FC53E300661BD5 /* FZWebServiceUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWebServiceUtility.swift; sourceTree = "<group>"; };
+		B478F1E828FC582B00661BD5 /* FZGeocoderUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZGeocoderUtility.swift; sourceTree = "<group>"; };
+		B478F1EC28FC6DB100661BD5 /* FZCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityView.swift; sourceTree = "<group>"; };
+		B478F1EE28FC809300661BD5 /* FZDailyWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZDailyWeatherPresenter.swift; sourceTree = "<group>"; };
+		B478F1F028FC80C600661BD5 /* FZ3HrWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ3HrWeatherPresenter.swift; sourceTree = "<group>"; };
+		B478F1F228FC817200661BD5 /* FZDailyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZDailyWeatherView.swift; sourceTree = "<group>"; };
+		B478F1F428FC827400661BD5 /* FZ3HrWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ3HrWeatherView.swift; sourceTree = "<group>"; };
+		B478F1F628FC8AC800661BD5 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		B478F1F828FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherDatabaseHandler.swift; sourceTree = "<group>"; };
+		B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityWeather.swift; sourceTree = "<group>"; };
+		B478F1FC28FD2A6600661BD5 /* FZSnow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZSnow.swift; sourceTree = "<group>"; };
+		B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZEndpoints.swift; sourceTree = "<group>"; };
+		B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ5DaysRequestComponents.swift; sourceTree = "<group>"; };
+		B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZDaysWeather.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B478F11D28F6E6A300661BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13228F6E6A400661BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13C28F6E6A400661BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180C9A602B89FDB800917402 /* FZRequestComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */,
+				180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */,
+				B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */,
+				180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */,
+			);
+			path = FZRequestComponents;
+			sourceTree = "<group>";
+		};
+		180C9A612B8A000D00917402 /* WeatherResponse */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */,
+				B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */,
+				B478F1D228FC334300661BD5 /* FZWeather.swift */,
+				B478F1D828FC339800661BD5 /* FZList.swift */,
+				B478F1DC28FC3A9E00661BD5 /* FZMain.swift */,
+				B478F1D628FC337F00661BD5 /* FZCoord.swift */,
+				B478F1D428FC335F00661BD5 /* FZCity.swift */,
+				B478F1DA28FC3A8A00661BD5 /* FZClouds.swift */,
+				B478F1DE28FC3AC200661BD5 /* FZRain.swift */,
+				B478F1FC28FD2A6600661BD5 /* FZSnow.swift */,
+				B478F1E028FC3AD600661BD5 /* FZSys.swift */,
+				B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */,
+				B478F1E428FC3B2700661BD5 /* FZWind.swift */,
+			);
+			path = WeatherResponse;
+			sourceTree = "<group>";
+		};
+		18335C072B90811800EA43CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18335C052B90810400EA43CF /* openweathermap.org.cer */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B478F11728F6E6A300661BD5 = {
+			isa = PBXGroup;
+			children = (
+				B478F12228F6E6A300661BD5 /* FZWeather */,
+				B478F13828F6E6A400661BD5 /* FZWeatherTests */,
+				B478F14228F6E6A400661BD5 /* FZWeatherUITests */,
+				B478F12128F6E6A300661BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B478F12128F6E6A300661BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B478F12028F6E6A300661BD5 /* FZWeather.app */,
+				B478F13528F6E6A400661BD5 /* FZWeatherTests.xctest */,
+				B478F13F28F6E6A400661BD5 /* FZWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B478F12228F6E6A300661BD5 /* FZWeather */ = {
+			isa = PBXGroup;
+			children = (
+				18335C072B90811800EA43CF /* Resources */,
+				B478F15B28F6E70600661BD5 /* Models */,
+				B478F15228F6E6B600661BD5 /* Presentation Layer */,
+				B478F15E28F6E73A00661BD5 /* Business Layer */,
+				B478F15928F6E70600661BD5 /* Concrete Layer */,
+				B478F15828F6E6FE00661BD5 /* Framework Layer */,
+				B478F12728F6E6A400661BD5 /* Assets.xcassets */,
+				B478F12928F6E6A400661BD5 /* Preview Content */,
+			);
+			path = FZWeather;
+			sourceTree = "<group>";
+		};
+		B478F12928F6E6A400661BD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B478F12A28F6E6A400661BD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B478F13828F6E6A400661BD5 /* FZWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				B478F13928F6E6A400661BD5 /* FZWeatherTests.swift */,
+			);
+			path = FZWeatherTests;
+			sourceTree = "<group>";
+		};
+		B478F14228F6E6A400661BD5 /* FZWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B478F14328F6E6A400661BD5 /* FZWeatherUITests.swift */,
+				B478F14528F6E6A400661BD5 /* FZWeatherUITestsLaunchTests.swift */,
+			);
+			path = FZWeatherUITests;
+			sourceTree = "<group>";
+		};
+		B478F15228F6E6B600661BD5 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B478F15328F6E6B600661BD5 /* Presenters */,
+				B478F15528F6E6B600661BD5 /* Views */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		B478F15328F6E6B600661BD5 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				B478F16128F7E4C800661BD5 /* FZCityWeatherPresenter.swift */,
+				B478F1EE28FC809300661BD5 /* FZDailyWeatherPresenter.swift */,
+				B478F1F028FC80C600661BD5 /* FZ3HrWeatherPresenter.swift */,
+				B4250A0E28FDBE4700526A67 /* FZCityPresenter.swift */,
+				B4250A1428FDCE7500526A67 /* FZLazyImagePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B478F15428F6E6B600661BD5 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				B478F16528F7EE6900661BD5 /* FZCityWeatherInteractor.swift */,
+				B4250A1828FDDBFA00526A67 /* FZLazyImageInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		B478F15528F6E6B600661BD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B478F15628F6E6B600661BD5 /* FZCityWeatherView.swift */,
+				B478F1F228FC817200661BD5 /* FZDailyWeatherView.swift */,
+				B478F1F428FC827400661BD5 /* FZ3HrWeatherView.swift */,
+				B478F1EC28FC6DB100661BD5 /* FZCityView.swift */,
+				B4250A1228FDCD0000526A67 /* FZLazyImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B478F15828F6E6FE00661BD5 /* Framework Layer */ = {
+			isa = PBXGroup;
+			children = (
+				18335C082B90C42100EA43CF /* KeychainUtility.swift */,
+				B478F1E628FC53E300661BD5 /* FZWebServiceUtility.swift */,
+				B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */,
+				B478F1E828FC582B00661BD5 /* FZGeocoderUtility.swift */,
+				B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */,
+				B478F15F28F6E74A00661BD5 /* Database */,
+			);
+			path = "Framework Layer";
+			sourceTree = "<group>";
+		};
+		B478F15928F6E70600661BD5 /* Concrete Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1F628FC8AC800661BD5 /* UIApplication+Extension.swift */,
+				B478F12328F6E6A300661BD5 /* FZWeatherApp.swift */,
+				B478F15A28F6E70600661BD5 /* Routers */,
+			);
+			path = "Concrete Layer";
+			sourceTree = "<group>";
+		};
+		B478F15A28F6E70600661BD5 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				B478F16328F7EE3B00661BD5 /* FZCityWeatherRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		B478F15B28F6E70600661BD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180C9A602B89FDB800917402 /* FZRequestComponents */,
+				180C9A612B8A000D00917402 /* WeatherResponse */,
+				B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */,
+				180C9A622B8A277500917402 /* TemperatureEnum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B478F15E28F6E73A00661BD5 /* Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B478F15428F6E6B600661BD5 /* Interactors */,
+				B45219CC28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift */,
+			);
+			path = "Business Layer";
+			sourceTree = "<group>";
+		};
+		B478F15F28F6E74A00661BD5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1F828FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift */,
+				B478F12C28F6E6A400661BD5 /* PersistenceController.swift */,
+				B478F12E28F6E6A400661BD5 /* FZWeather.xcdatamodeld */,
+				B4250A1E28FE9D1600526A67 /* FZCDCityWeatherExtention.swift */,
+				B4250A2428FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift */,
+				B4250A2028FE9DEA00526A67 /* FZCDCityExtention.swift */,
+				B4250A2628FEA2E800526A67 /* FZCDListExtention.swift */,
+				B4250A2228FE9E7100526A67 /* FZCDCoordExtention.swift */,
+				B45219C228FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift */,
+				B4250A2828FEA37100526A67 /* FZCDRainExtention.swift */,
+				B4250A2A28FEA3BB00526A67 /* FZCDMainExtention.swift */,
+				B45219C428FEA7FA0090C2F7 /* FZCDCloudsExtention.swift */,
+				B45219C628FEA8890090C2F7 /* FZCDWindExtention.swift */,
+				B45219C828FEA8E70090C2F7 /* FZCDSnowExtention.swift */,
+				B45219CA28FEA9A50090C2F7 /* FZCDSysExtention.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B478F11F28F6E6A300661BD5 /* FZWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B478F14928F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeather" */;
+			buildPhases = (
+				B478F11C28F6E6A300661BD5 /* Sources */,
+				B478F11D28F6E6A300661BD5 /* Frameworks */,
+				B478F11E28F6E6A300661BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FZWeather;
+			productName = FZWeather;
+			productReference = B478F12028F6E6A300661BD5 /* FZWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B478F13428F6E6A400661BD5 /* FZWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B478F14C28F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeatherTests" */;
+			buildPhases = (
+				B478F13128F6E6A400661BD5 /* Sources */,
+				B478F13228F6E6A400661BD5 /* Frameworks */,
+				B478F13328F6E6A400661BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B478F13728F6E6A400661BD5 /* PBXTargetDependency */,
+			);
+			name = FZWeatherTests;
+			productName = FZWeatherTests;
+			productReference = B478F13528F6E6A400661BD5 /* FZWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B478F13E28F6E6A400661BD5 /* FZWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B478F14F28F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeatherUITests" */;
+			buildPhases = (
+				B478F13B28F6E6A400661BD5 /* Sources */,
+				B478F13C28F6E6A400661BD5 /* Frameworks */,
+				B478F13D28F6E6A400661BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B478F14128F6E6A400661BD5 /* PBXTargetDependency */,
+			);
+			name = FZWeatherUITests;
+			productName = FZWeatherUITests;
+			productReference = B478F13F28F6E6A400661BD5 /* FZWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B478F11828F6E6A300661BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B478F11F28F6E6A300661BD5 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					B478F13428F6E6A400661BD5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = B478F11F28F6E6A300661BD5;
+					};
+					B478F13E28F6E6A400661BD5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = B478F11F28F6E6A300661BD5;
+					};
+				};
+			};
+			buildConfigurationList = B478F11B28F6E6A300661BD5 /* Build configuration list for PBXProject "FZWeather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B478F11728F6E6A300661BD5;
+			productRefGroup = B478F12128F6E6A300661BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B478F11F28F6E6A300661BD5 /* FZWeather */,
+				B478F13428F6E6A400661BD5 /* FZWeatherTests */,
+				B478F13E28F6E6A400661BD5 /* FZWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B478F11E28F6E6A300661BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478F12B28F6E6A400661BD5 /* Preview Assets.xcassets in Resources */,
+				18335C062B90810400EA43CF /* openweathermap.org.cer in Resources */,
+				B478F12828F6E6A400661BD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13328F6E6A400661BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13D28F6E6A400661BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B478F11C28F6E6A300661BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478F1FF28FD3B1F00661BD5 /* FZEndpoints.swift in Sources */,
+				B478F12D28F6E6A400661BD5 /* PersistenceController.swift in Sources */,
+				B478F1F528FC827400661BD5 /* FZ3HrWeatherView.swift in Sources */,
+				B478F1D528FC335F00661BD5 /* FZCity.swift in Sources */,
+				B4250A2328FE9E7100526A67 /* FZCDCoordExtention.swift in Sources */,
+				B4250A2928FEA37100526A67 /* FZCDRainExtention.swift in Sources */,
+				B478F20128FD403B00661BD5 /* FZ5DaysRequestComponents.swift in Sources */,
+				B45219C528FEA7FA0090C2F7 /* FZCDCloudsExtention.swift in Sources */,
+				B478F1D328FC334300661BD5 /* FZWeather.swift in Sources */,
+				B45219CB28FEA9A50090C2F7 /* FZCDSysExtention.swift in Sources */,
+				B4250A1528FDCE7500526A67 /* FZLazyImagePresenter.swift in Sources */,
+				B45219CD28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift in Sources */,
+				B478F1D728FC337F00661BD5 /* FZCoord.swift in Sources */,
+				B4250A2528FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift in Sources */,
+				B45219CF28FEB9AF0090C2F7 /* FZDeviceLocationService.swift in Sources */,
+				B478F1E128FC3AD600661BD5 /* FZSys.swift in Sources */,
+				B478F15728F6E6B600661BD5 /* FZCityWeatherView.swift in Sources */,
+				B4250A1728FDD94C00526A67 /* FZImageCachingUtility.swift in Sources */,
+				B478F1E528FC3B2700661BD5 /* FZWind.swift in Sources */,
+				B478F1DB28FC3A8A00661BD5 /* FZClouds.swift in Sources */,
+				B478F16428F7EE3B00661BD5 /* FZCityWeatherRouter.swift in Sources */,
+				B478F1FB28FD201B00661BD5 /* FZCityWeather.swift in Sources */,
+				B478F1E928FC582B00661BD5 /* FZGeocoderUtility.swift in Sources */,
+				B478F20328FD50AF00661BD5 /* FZDaysWeather.swift in Sources */,
+				B4250A1328FDCD0000526A67 /* FZLazyImageView.swift in Sources */,
+				B478F1D928FC339800661BD5 /* FZList.swift in Sources */,
+				B478F1F928FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift in Sources */,
+				B478F1EF28FC809300661BD5 /* FZDailyWeatherPresenter.swift in Sources */,
+				B478F13028F6E6A400661BD5 /* FZWeather.xcdatamodeld in Sources */,
+				B478F16228F7E4C800661BD5 /* FZCityWeatherPresenter.swift in Sources */,
+				B478F1DF28FC3AC200661BD5 /* FZRain.swift in Sources */,
+				B4250A2128FE9DEA00526A67 /* FZCDCityExtention.swift in Sources */,
+				B45219C928FEA8E70090C2F7 /* FZCDSnowExtention.swift in Sources */,
+				B4250A0F28FDBE4700526A67 /* FZCityPresenter.swift in Sources */,
+				B478F1F328FC817200661BD5 /* FZDailyWeatherView.swift in Sources */,
+				B4250A2B28FEA3BB00526A67 /* FZCDMainExtention.swift in Sources */,
+				B478F16628F7EE6900661BD5 /* FZCityWeatherInteractor.swift in Sources */,
+				B478F1DD28FC3A9E00661BD5 /* FZMain.swift in Sources */,
+				B4250A1928FDDBFA00526A67 /* FZLazyImageInteractor.swift in Sources */,
+				B4250A1B28FDF24100526A67 /* FZMapAnnotationLocation.swift in Sources */,
+				B478F1E728FC53E300661BD5 /* FZWebServiceUtility.swift in Sources */,
+				B4250A2728FEA2E800526A67 /* FZCDListExtention.swift in Sources */,
+				18335C092B90C42100EA43CF /* KeychainUtility.swift in Sources */,
+				180C9A5F2B89FDB200917402 /* FZRequestComponentsProtocol.swift in Sources */,
+				B478F12428F6E6A300661BD5 /* FZWeatherApp.swift in Sources */,
+				B45219C328FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift in Sources */,
+				180C9A5D2B89FD8A00917402 /* FZRequestComponentsFromCity.swift in Sources */,
+				B45219C728FEA8890090C2F7 /* FZCDWindExtention.swift in Sources */,
+				B478F1F128FC80C600661BD5 /* FZ3HrWeatherPresenter.swift in Sources */,
+				B4250A1F28FE9D1600526A67 /* FZCDCityWeatherExtention.swift in Sources */,
+				180C9A632B8A277500917402 /* TemperatureEnum.swift in Sources */,
+				B478F1E328FC3B0600661BD5 /* FZWeatherElement.swift in Sources */,
+				B478F1F728FC8AC800661BD5 /* UIApplication+Extension.swift in Sources */,
+				B478F1FD28FD2A6600661BD5 /* FZSnow.swift in Sources */,
+				B478F1ED28FC6DB100661BD5 /* FZCityView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13128F6E6A400661BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478F13A28F6E6A400661BD5 /* FZWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B478F13B28F6E6A400661BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478F14428F6E6A400661BD5 /* FZWeatherUITests.swift in Sources */,
+				B478F14628F6E6A400661BD5 /* FZWeatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B478F13728F6E6A400661BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B478F11F28F6E6A300661BD5 /* FZWeather */;
+			targetProxy = B478F13628F6E6A400661BD5 /* PBXContainerItemProxy */;
+		};
+		B478F14128F6E6A400661BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B478F11F28F6E6A300661BD5 /* FZWeather */;
+			targetProxy = B478F14028F6E6A400661BD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B478F14728F6E6A400661BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B478F14828F6E6A400661BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B478F14A28F6E6A400661BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FZWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 93FK67534U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location will get fetch to get weather Data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B478F14B28F6E6A400661BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FZWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 93FK67534U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location will get fetch to get weather Data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B478F14D28F6E6A400661BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93FK67534U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FZWeather";
+			};
+			name = Debug;
+		};
+		B478F14E28F6E6A400661BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93FK67534U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FZWeather";
+			};
+			name = Release;
+		};
+		B478F15028F6E6A400661BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93FK67534U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FZWeather;
+			};
+			name = Debug;
+		};
+		B478F15128F6E6A400661BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93FK67534U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FZ.FZWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FZWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B478F11B28F6E6A300661BD5 /* Build configuration list for PBXProject "FZWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B478F14728F6E6A400661BD5 /* Debug */,
+				B478F14828F6E6A400661BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B478F14928F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B478F14A28F6E6A400661BD5 /* Debug */,
+				B478F14B28F6E6A400661BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B478F14C28F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B478F14D28F6E6A400661BD5 /* Debug */,
+				B478F14E28F6E6A400661BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B478F14F28F6E6A400661BD5 /* Build configuration list for PBXNativeTarget "FZWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B478F15028F6E6A400661BD5 /* Debug */,
+				B478F15128F6E6A400661BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B478F12E28F6E6A400661BD5 /* FZWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B478F12F28F6E6A400661BD5 /* FZWeather.xcdatamodel */,
+			);
+			currentVersion = B478F12F28F6E6A400661BD5 /* FZWeather.xcdatamodel */;
+			path = FZWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B478F11828F6E6A300661BD5 /* Project object */;
+}
