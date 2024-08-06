@@ -18,7 +18,7 @@ class FZCityWeatherRouter: FZCityWeatherRouterProtocol {
     {
         // Example usage with String
         let keychainString = KeychainUtility<String>()
-        keychainString.save(value: <#Add certificate key here, forKey#>: "PublicKey")
+        keychainString.save(value: /*Add certificate public key hash here*/, forKey: "PublicKey")
         
         let router = FZCityWeatherRouter()
         let cityWeatherInteractor: FZCityWeatherInteractorProtocol = FZCityWeatherInteractor()
